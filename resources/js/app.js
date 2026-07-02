@@ -63,7 +63,7 @@ Alpine.data('aduanPage', () => ({
                 this.decrypted = r.data
                 this.executionTime = r.execution_time
                 this.isDecrypted = true
-                this.key = ''
+                // this.key = ''
                 this.showModal = false
             } else {
                 alert(r.message)
@@ -223,7 +223,7 @@ Alpine.data('satgasDecryptPage', (initialId) => ({
                 this.decrypted = r.data
                 this.executionTime = r.execution_time
                 this.isDecrypted = true
-                this.key = ''
+                // this.key = ''
                 this.showModal = false
             } else {
                 alert(r.message)

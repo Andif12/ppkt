@@ -90,6 +90,16 @@
                                 <p class="text-gray-500">Lokasi Kejadian</p>
                                 <p class="font-semibold text-gray-800">{{ $aduan->lokasi ?? '-'}}</p>
                             </div>
+                            <div class="md:col-span-2 mt-2">
+                                <p class="text-gray-500">Status Penanganan</p>
+                                @php
+                                    $statusText = $status->status1 ?? '-';
+                                    if (!empty($status->status4)) $statusText = $status->status4;
+                                    elseif (!empty($status->status3)) $statusText = $status->status3;
+                                    elseif (!empty($status->status2)) $statusText = $status->status2;
+                                @endphp
+                                <p class="font-semibold text-gray-800">{{ $statusText }}</p>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-6">
