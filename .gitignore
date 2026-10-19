@@ -34,5 +34,5 @@ test_*.php
 !setup.bat
 
 # Allow dokumentasi folder and its contents to be tracked
-!dokumentasi/
-!dokumentasi/*
+# !dokumentasi/
+# !dokumentasi/*
