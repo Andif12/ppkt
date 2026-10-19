@@ -27,7 +27,7 @@ yarn-error.log
 *.py
 *.txt
 test_*.php
-*.pdf
+# *.pdf
 *.docx
 *.patch
 *.diff
